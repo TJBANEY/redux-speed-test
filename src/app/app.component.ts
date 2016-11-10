@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
   numbers: any;
-  tree_white: any = 'white'
+  ticks: number = 0;
 
   white: any = [
   	111, 240, 332, 510, 547, 683, 733, 854, 863
@@ -71,6 +71,11 @@ export class AppComponent {
 
   constructor() {
   	this.numbers = Array(1320).fill().map((x,i)=>i);
+  }
+
+  startTimer(){
+    let timer = Observable.timer(1000,100);
+    timer.subscribe(t=>this.ticks = t/10);
   }
 
   getClass(square){

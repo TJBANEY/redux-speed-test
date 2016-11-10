@@ -1,9 +1,13 @@
 <div style="width: 176px; height: 120px; border: 1px solid red; float: left;">
 	<div *ngFor="let item of numbers" style="width: 4px; height: 4px; border: display: inline-block; float: left;" [class]="getClass(item)" [id]="item"></div>
+	<div style="text-align: center;">{{ ticks }}</div>
 </div>
 
-<button style="float: left; margin: 0px 20px;">START TEST</button>
+<div style="float: left; margin: 0 20px;">
+	<button (click)="startTimer()" style="float: left; margin: 0px 20px;">START TEST</button>
+</div>
 
 <div style="width: 176px; height: 120px; border: 1px solid red; float: left;">
 	<div *ngFor="let item of numbers" style="width: 4px; height: 4px; border: display: inline-block; float: left;" [class]="getClass(item)" [id]="item"></div>
+	<div style="text-align: center;">{{ ticks }}</div>
 </div>
