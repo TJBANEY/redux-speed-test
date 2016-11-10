@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div style="width: 176px; height: 120px; border: 1px solid red; float: left; margin-right: 100px;">
+	<div *ngFor="let item of numbers" style="width: 2px; height: 2px; border: 1px solid blue; display: inline-block; float: left;"></div>
+</div>
+
+<div style="width: 176px; height: 120px; border: 1px solid red; float: left;">
+	<div *ngFor="let item of numbers" style="width: 2px; height: 2px; border: 1px solid blue; display: inline-block; float: left;"></div>
+</div>
