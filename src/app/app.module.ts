@@ -4,10 +4,16 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PixelComponent } from './pixel/pixel.component'
+import { PixelboxComponent } from './pixelbox/pixelbox.component';
+import { PixelcontainerComponent } from './pixelcontainer/pixelcontainer.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PixelComponent,
+    PixelboxComponent,
+    PixelcontainerComponent
   ],
   imports: [
     BrowserModule,

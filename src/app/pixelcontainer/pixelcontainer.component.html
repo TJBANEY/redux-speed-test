@@ -1,0 +1,6 @@
+<div style="width: 176px; height: 120px; border: 1px solid red; float: left;">
+	<app-pixelbox></app-pixelbox>
+</div>
+
+<div *ngFor="let item of numbers" style="width: 4px; height: 4px; border: display: inline-block; float: left;" [class]="getClass(item)" [id]="item"></div>
+	<div style="text-align: center;">{{ ticks }}</div>
