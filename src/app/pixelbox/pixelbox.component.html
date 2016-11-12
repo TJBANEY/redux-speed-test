@@ -1,3 +1,4 @@
 <div>
-	<app-pixel></app-pixel>
+	<app-pixel *ngFor="let item of numbers" [numbers]="numbers"></app-pixel>
+	<div style="text-align: center;">{{ ticks }}</div>
 </div>
