@@ -22,11 +22,6 @@ export class TestComponent implements OnInit {
 		pixelActions: PixelActions){
 			this.pixelStore = pixelStore;
    			this.pixelActions = pixelActions;
-
-   			this.unsubscribe = this.pixelStore.subscribe(function listener(){
-		      let state = this.pixelStore.getState();
-		      this.pixels = state.pixels;
-		    });
 		}
 
 	ngOnInit(){
@@ -34,8 +29,6 @@ export class TestComponent implements OnInit {
 	}
 
 	private getPixelState(){
-		console.log(this.pixels);
-		console.log('HELLO');
 		let state = this.pixelStore.getState();
   		this.pixels = state.pixels;
 		console.log(this.pixels);

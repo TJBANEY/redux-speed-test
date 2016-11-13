@@ -12,6 +12,7 @@ import { PixelComponent } from './pixel/pixel.component'
 import { PixelboxComponent } from './pixelbox/pixelbox.component';
 import { PixelcontainerComponent } from './pixelcontainer/pixelcontainer.component';
 import { TestComponent } from './test.component'
+import { Pixelcontainer2Component } from './pixelcontainer2/pixelcontainer2.component'
 
 const pixelStore = createStore(pixelReducer);
 
@@ -21,6 +22,7 @@ const pixelStore = createStore(pixelReducer);
     PixelComponent,
     PixelboxComponent,
     PixelcontainerComponent,
+    Pixelcontainer2Component,
     TestComponent
   ],
   imports: [
