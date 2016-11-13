@@ -6,11 +6,13 @@ import { Component, OnInit } from '@angular/core';
   inputs: ['numbers'],
   styleUrls: ['./pixel.component.css']
 })
-export class PixelComponent implements OnInit {
+
+export class PixelComponent {
 
   constructor() { }
 
-  ngOnInit() {
+  getClass(){
+  	console.log('HEY!')
   }
 
 }

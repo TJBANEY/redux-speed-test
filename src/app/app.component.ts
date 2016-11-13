@@ -74,8 +74,8 @@ export class AppComponent {
   }
 
   startTimer(){
-    let timer = Observable.timer(1000,100);
-    timer.subscribe(t=>this.ticks = t/10);
+    let timer = Observable.timer(1000,10);
+    timer.subscribe(t=>this.ticks = (t/100).toFixed(2));
   }
 
   getClass(square){
