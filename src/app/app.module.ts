@@ -8,10 +8,9 @@ import {pixelReducer} from './pixelStateReducer';
 import {PixelActions} from './ActionCreator';
 
 import { AppComponent } from './app.component';
-import { PixelComponent } from './pixel/pixel.component'
 import { PixelboxComponent } from './pixelbox/pixelbox.component';
+import { Pixelbox2Component } from './pixelbox2/pixelbox2.component'
 import { PixelcontainerComponent } from './pixelcontainer/pixelcontainer.component';
-import { TestComponent } from './test.component'
 import { Pixelcontainer2Component } from './pixelcontainer2/pixelcontainer2.component'
 
 const pixelStore = createStore(pixelReducer);
@@ -19,11 +18,10 @@ const pixelStore = createStore(pixelReducer);
 @NgModule({
   declarations: [
     AppComponent,
-    PixelComponent,
     PixelboxComponent,
+    Pixelbox2Component,
     PixelcontainerComponent,
     Pixelcontainer2Component,
-    TestComponent
   ],
   imports: [
     BrowserModule,

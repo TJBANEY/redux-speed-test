@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Pixelbox2Component } from '../pixelbox2/pixelbox2.component'
 
 @Component({
   selector: 'app-pixelcontainer2',
@@ -7,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class Pixelcontainer2Component implements OnInit {
 	@Input() numbers: any;
+	@Input() timerStarted: any;
 
   	constructor() { }
 

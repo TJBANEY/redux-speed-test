@@ -1,9 +1,8 @@
-<app-pixelcontainer [numbers]="numbers"></app-pixelcontainer>
+<app-pixelcontainer [timerStarted]="timerStarted" [numbers]="numbers"></app-pixelcontainer>
 
 <div style="float: left; margin: 0 20px;">
 	<button (click)="startTimer()" style="float: left; margin: 0px 20px;">START TEST</button>
+	<div style="text-align: center;">{{ ticks }}</div>
 </div>
 
-<app-pixelcontainer2 [numbers]="numbers"></app-pixelcontainer2>
-
-<test></test>
+<app-pixelcontainer2 [timerStarted]="timerStarted" [numbers]="numbers"></app-pixelcontainer2>
