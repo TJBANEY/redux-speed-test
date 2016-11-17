@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
 import { PixelboxComponent } from './pixelbox/pixelbox.component';
 import { Pixelbox2Component } from './pixelbox2/pixelbox2.component'
 import { PixelcontainerComponent } from './pixelcontainer/pixelcontainer.component';
-import { Pixelcontainer2Component } from './pixelcontainer2/pixelcontainer2.component'
+import { Pixelcontainer2Component } from './pixelcontainer2/pixelcontainer2.component';
 
 const pixelStore = createStore(pixelReducer);
 

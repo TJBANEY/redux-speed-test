@@ -5,8 +5,7 @@ import { Observable } from 'rxjs';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-});
-
+})
 export class AppComponent {
   numbers: any;
   ticks: number = 0;
@@ -16,15 +15,17 @@ export class AppComponent {
   	this.numbers = Array(1320).fill().map((x,i)=>i);
   }
 
-  toggleStart(){
-    console.log('XXX')
+  subscribeToTimer(){
+    let timer = Observable.timer(1000,10);
+    timer.subscribe(t=>this.ticks = (t/100).toFixed(2));
+  }
+
+  toggleStartTimer(){
+    this.timerStarted = 'true';
   }
 
   startTimer(){
-    let timer = Observable.timer(1000,10);
-    timer.subscribe(t=>this.ticks = (t/100).toFixed(2));
-
-    this.timerStarted = 'true';
+    this.toggleStartTimer();
   }
 
 }
